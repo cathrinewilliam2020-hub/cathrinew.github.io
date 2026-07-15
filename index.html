@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AIforzy - Discover Local Businesses</title>
+<title>AIforzy</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
 <style>
@@ -23,104 +23,127 @@ box-sizing:border-box;
 body{
 
 font-family:'Inter',sans-serif;
-background:#ffffff;
-color:#111111;
+background:linear-gradient(120deg,#ffffff,#f5efff);
+color:#111;
 
 }
 
 
-/* NAVBAR */
 
-nav{
+/* HEADER */
+
+header{
 
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 8%;
+padding:25px 7%;
+
+}
+
+
+.brand{
+
+display:flex;
+align-items:center;
+gap:10px;
 
 }
 
 
 .logo{
 
-font-family:'Poppins',sans-serif;
-font-size:32px;
-font-weight:800;
-
-}
-
-
-.logo span{
-
-color:#1DB954;
-
-}
-
-
-.menu{
-
-display:flex;
-gap:30px;
-align-items:center;
-
-}
-
-
-.menu a{
-
-text-decoration:none;
-color:#333;
+font-size:24px;
 font-weight:500;
 
 }
 
 
-.join{
+.cat-small{
 
-background:#1DB954;
-color:white!important;
-padding:12px 25px;
-border-radius:25px;
+font-size:28px;
 
 }
 
 
 
-/* HERO */
+nav{
 
-
-.hero{
-
-text-align:center;
-padding:70px 8%;
+display:flex;
+gap:28px;
 
 }
 
 
-.hero h1{
+nav a{
 
-font-family:'Poppins',sans-serif;
-font-size:52px;
-font-weight:700;
-line-height:1.2;
-
-}
-
-
-.hero h1 span{
-
-color:#C9A227;
-
-}
-
-
-
-.hero p{
-
-margin:20px auto;
-max-width:650px;
-font-size:18px;
+text-decoration:none;
 color:#555;
+font-size:14px;
+
+}
+
+
+
+/* MAIN */
+
+.main{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px 8%;
+min-height:80vh;
+
+}
+
+
+
+/* BIG ZUMI */
+
+.zumi{
+
+width:430px;
+height:430px;
+border-radius:50%;
+
+background:rgba(135,82,255,0.15);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:180px;
+
+opacity:0.75;
+
+}
+
+
+
+/* RIGHT SIDE */
+
+.content{
+
+max-width:520px;
+
+}
+
+
+.content h1{
+
+font-size:36px;
+font-weight:500;
+line-height:1.3;
+
+}
+
+
+.content p{
+
+margin-top:18px;
+font-size:16px;
+color:#666;
 line-height:1.6;
 
 }
@@ -129,67 +152,73 @@ line-height:1.6;
 
 /* SEARCH */
 
+.search{
 
-.search-box{
-
-margin:40px auto;
-max-width:650px;
-display:flex;
+margin-top:40px;
 background:white;
-border:1px solid #ddd;
-border-radius:50px;
+
 padding:8px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+border-radius:40px;
+
+display:flex;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 
 }
 
 
-.search-box input{
+.search input{
 
-flex:1;
 border:none;
 outline:none;
-padding:18px 25px;
-font-size:16px;
+
+padding:15px 20px;
+flex:1;
+
+font-size:14px;
 
 }
 
 
-.search-btn{
+.search button{
 
+border:none;
 background:#1DB954;
 color:white;
-border:none;
-padding:0 30px;
-border-radius:40px;
-font-weight:600;
-cursor:pointer;
+
+padding:0 25px;
+
+border-radius:30px;
 
 }
-
 
 
 
 /* BUTTONS */
 
 
-.actions{
+.buttons{
 
 margin-top:25px;
 
 }
 
 
-.actions a{
+.buttons a{
 
 text-decoration:none;
-padding:15px 35px;
-border-radius:30px;
-margin:10px;
-display:inline-block;
-font-weight:600;
+
+font-size:14px;
+
+padding:13px 25px;
+
+border-radius:25px;
+
+margin-right:10px;
 
 }
+
 
 
 .explore{
@@ -202,87 +231,52 @@ color:white;
 
 .grow{
 
-border:2px solid #1DB954;
+border:1px solid #1DB954;
 color:#1DB954;
 
 }
 
 
 
-/* ZUMI */
-
-
-.zumi{
-
-margin:60px auto 20px;
-width:120px;
-height:120px;
-background:#111;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:55px;
-
-}
-
-
-.zumi-text{
-
-font-size:14px;
-color:#777;
-
-}
-
-
-
-/* LOWER SECTION */
-
+/* FEATURES */
 
 .features{
 
 display:flex;
 justify-content:center;
-gap:25px;
-padding:50px 8%;
-flex-wrap:wrap;
+gap:20px;
+padding:30px 8%;
 
 }
 
 
-.card{
+.box{
 
-width:280px;
-padding:30px;
-border-radius:20px;
-background:#fafafa;
+background:white;
+padding:25px;
 
-}
+width:250px;
 
-
-.card h3{
-
-font-family:'Poppins';
-margin-bottom:10px;
+border-radius:18px;
 
 }
 
 
-.card p{
+.box h3{
 
-color:#555;
+font-size:16px;
+font-weight:500;
 
 }
 
 
-footer{
+.box p{
 
-text-align:center;
-padding:30px;
+font-size:14px;
 color:#777;
+margin-top:10px;
 
 }
-
 
 
 </style>
@@ -290,51 +284,69 @@ color:#777;
 </head>
 
 
-
 <body>
+
+
+<header>
+
+
+<div class="brand">
+
+<div class="logo">
+AI4Z
+</div>
+
+<div class="cat-small">
+🐈‍⬛
+</div>
+
+</div>
 
 
 <nav>
 
-<div class="logo">
-AI<span>forzy</span>
-</div>
-
-
-<div class="menu">
-
-<a href="#">Businesses</a>
-<a href="#">Categories</a>
-<a href="#">About</a>
-<a href="#" class="join">Join AIforzy</a>
-
-</div>
-
+<a href="#">Home</a>
+<a href="#">Discover</a>
+<a href="#">Connect</a>
+<a href="#">Profile</a>
 
 </nav>
 
 
+</header>
 
-<section class="hero">
+
+
+<section class="main">
+
+
+<div class="zumi">
+
+🐈‍⬛
+
+</div>
+
+
+
+<div class="content">
 
 
 <h1>
-Discover Businesses.<br>
-<span>Build Connections.</span>
+A simple bridge between people and local businesses.
 </h1>
 
 
 <p>
-AIforzy connects customers with local businesses and helps entrepreneurs grow digitally.
+Discover nearby businesses, explore products, and help small entrepreneurs grow digitally.
 </p>
 
 
 
-<div class="search-box">
+<div class="search">
 
-<input type="text" placeholder="Search businesses, products or services...">
+<input placeholder="Search shops, services, products...">
 
-<button class="search-btn">
+<button>
 Search
 </button>
 
@@ -342,14 +354,14 @@ Search
 
 
 
-<div class="actions">
+<div class="buttons">
 
-<a href="#" class="explore">
+<a class="explore" href="#">
 Explore Businesses
 </a>
 
 
-<a href="#" class="grow">
+<a class="grow" href="#">
 Grow Your Business
 </a>
 
@@ -358,12 +370,6 @@ Grow Your Business
 
 
 
-<div class="zumi">
-🐈‍⬛
-</div>
-
-<div class="zumi-text">
-Meet Zumi, your AIforzy guide
 </div>
 
 
@@ -374,56 +380,48 @@ Meet Zumi, your AIforzy guide
 <section class="features">
 
 
-<div class="card">
+<div class="box">
 
 <h3>
-🌱 Discover
+Discover
 </h3>
 
 <p>
-Find trusted local businesses easily.
+Find businesses around you easily.
 </p>
 
 </div>
 
 
 
-<div class="card">
+<div class="box">
 
 <h3>
-🤝 Connect
+Connect
 </h3>
 
 <p>
-Create meaningful customer-business connections.
+Build direct connections.
 </p>
 
 </div>
 
 
 
-<div class="card">
+<div class="box">
 
 <h3>
-🚀 Grow
+Grow
 </h3>
 
 <p>
-Help small businesses enter the digital world.
+Take your business online.
 </p>
 
 </div>
 
 
 </section>
-
-
-
-<footer>
-
-© 2026 AIforzy. Connecting communities digitally.
-
-</footer>
 
 
 
