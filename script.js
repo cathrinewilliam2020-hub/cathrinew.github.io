@@ -1,1 +1,1 @@
-console.log("Welcome to AIforzy!");
+console.log("Welcome to Aiforzy!");
