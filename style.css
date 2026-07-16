@@ -16,22 +16,11 @@ overflow-x:hidden;
 nav{
 
 display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:25px 8%;
-
-position:fixed;
-
-width:100%;
-
-top:0;
-
-background:rgba(255,255,255,.65);
-
-backdrop-filter:blur(15px);
-
-z-index:999;
+gap:18px;
+background:white;
+padding:10px 18px;
+border-radius:30px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
 
 }
 
@@ -58,12 +47,10 @@ gap:35px;
 nav a{
 
 text-decoration:none;
-
-color:#333;
-
-font-weight:500;
-
-transition:.3s;
+color:#444;
+font-size:13px;
+font-weight:400;
+padding:5px 8px;
 
 }
 
