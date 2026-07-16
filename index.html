@@ -1,429 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AIforzy</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-
-body{
-
-font-family:'Inter',sans-serif;
-background:linear-gradient(120deg,#ffffff,#f5efff);
-color:#111;
-
-}
-
-
-
-/* HEADER */
-
-header{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 3%;
-
-}
-
-.brand{
-
-display:flex;
-align-items:center;
-gap:4px;
-
-}
-
-
-.logo{
-
-font-size:24px;
-font-weight:500;
-
-}
-
-
-.cat-small{
-
-font-size:28px;
-
-}
-
-
-
-nav{
-
-display:flex;
-gap:28px;
-
-}
-
-
-nav a{
-
-text-decoration:none;
-color:#555;
-font-size:14px;
-
-}
-
-
-
-/* MAIN */
-
-.main{
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:50px 8%;
-min-height:80vh;
-
-}
-
-
-
-/* BIG ZUMI */
-
-.zumi{
-
-width:430px;
-height:430px;
-border-radius:50%;
-
-background:rgba(135,82,255,0.15);
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-font-size:180px;
-
-opacity:0.75;
-
-}
-
-
-
-/* RIGHT SIDE */
-
-.content{
-
-max-width:520px;
-
-}
-
-
-.content h1{
-
-font-size:28px;
-font-weight:400;
-line-height:1.4;
-
-}
-
-
-.content p{
-
-margin-top:18px;
-font-size:16px;
-color:#666;
-line-height:1.6;
-
-}
-
-
-
-/* SEARCH */
-
-.search{
-
-margin-top:40px;
-background:white;
-
-padding:8px;
-
-border-radius:40px;
-
-display:flex;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
-}
-
-
-.search input{
-
-border:none;
-outline:none;
-
-padding:15px 20px;
-flex:1;
-
-font-size:14px;
-
-}
-
-
-.search button{
-
-border:none;
-background:#1DB954;
-color:white;
-
-padding:0 25px;
-
-border-radius:30px;
-
-}
-
-
-
-/* BUTTONS */
-
-
-.buttons{
-
-margin-top:25px;
-
-}
-
-
-.buttons a{
-
-text-decoration:none;
-
-font-size:14px;
-
-padding:13px 25px;
-
-border-radius:25px;
-
-margin-right:10px;
-
-}
-
-
-
-.explore{
-
-background:#111;
-color:white;
-
-}
-
-
-.grow{
-
-border:1px solid #1DB954;
-color:#1DB954;
-
-}
-
-
-
-/* FEATURES */
-
-.features{
-
-display:flex;
-justify-content:center;
-gap:20px;
-padding:30px 8%;
-
-}
-
-
-.box{
-
-background:white;
-padding:25px;
-
-width:250px;
-
-border-radius:18px;
-
-}
-
-
-.box h3{
-
-font-size:16px;
-font-weight:500;
-
-}
-
-
-.box p{
-
-font-size:14px;
-color:#777;
-margin-top:10px;
-
-}
-
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<header>
-
-
-<div class="brand">
-
-<div class="logo">
-AI4Z
-</div>
-
-<div class="cat-small">
-🐈‍⬛
-</div>
-
-</div>
-
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#">Discover</a>
-<a href="#">Connect</a>
-<a href="#">Profile</a>
-
-</nav>
-
-
-</header>
-
-
-
-<section class="main">
-
-
-<div class="zumi">
-
-🐈‍⬛
-
-</div>
-
-
-
-<div class="content">
-
-
-<h1>
-A simple bridge between people and local businesses.
-</h1>
-
-
-<p>
-Discover nearby businesses, explore products, and help small entrepreneurs grow digitally.
-</p>
-
-
-
-<div class="search">
-
-<input placeholder="Search shops, services, products...">
-
-<button>
-Search
-</button>
-
-</div>
-
-
-
-<div class="buttons">
-
-<a class="explore" href="#">
-Explore Businesses
-</a>
-
-
-<a class="grow" href="#">
-Grow Your Business
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-<section class="features">
-
-
-<div class="box">
-
-<h3>
+Create a complete responsive homepage using HTML, CSS and JavaScript in one file.
+
+Website Name:
+AIforzy
+
+Theme:
+Modern, premium, minimal.
+
+Color Palette:
+Background: #F5F0FF (soft lavender)
+Cards: White
+Primary Text: #111111
+Secondary Text: #666666
+Accent Lavender: #A78BFA
+Accent Green: #22C55E
+Borders: #ECECEC
+
+Typography:
+Use Poppins from Google Fonts.
+
+Navigation:
+Left:
+AIforzy logo text
+
+Right:
 Discover
-</h3>
+Businesses
+Students
+About
+Sign In
 
-<p>
-Find businesses around you easily.
-</p>
+Sticky navbar with slight blur on scroll.
 
-</div>
+---------------------------------------------------
 
+Hero Section
 
+Left side:
 
-<div class="box">
+Small badge:
 
-<h3>
-Connect
-</h3>
+✨ Helping Local Businesses Grow
 
-<p>
-Build direct connections.
-</p>
+Main Heading:
 
-</div>
+Helping Small Businesses Grow.
+Powered by Young Talent.
 
+Paragraph:
 
+AIforzy connects local businesses with students, creators and customers—making growth simple, affordable and accessible.
 
-<div class="box">
+Buttons:
 
-<h3>
-Grow
-</h3>
+Green button:
+Get Started
 
-<p>
-Take your business online.
-</p>
+Outlined button:
+Explore Businesses
 
-</div>
+Below buttons show small stats:
 
+100+ Students
+Growing Businesses
+One Community
 
-</section>
+---------------------------------------------------
 
+Right side
 
+Place a large cute mascot named Zumi.
 
-</body>
+Important:
+Keep Zumi exactly as before.
 
-</html>
+Characteristics:
+
+round black cat
+
+small body
+
+big expressive eyes
+
+green scarf
+
+holding a tiny ladder
+
+cute paws
+
+slight smile
+
+no talking
+
+no animation besides gentle floating
+
+Zumi should occupy most of the right hero section.
+
+Behind Zumi place soft lavender glowing circles and floating abstract blobs.
+
+---------------------------------------------------
+
+Below Hero
+
+Section title:
+
+How AIforzy Works
+
+Three premium cards.
+
+Card 1
+
+🏪
+
+For Businesses
+
+Grow with affordable talent, better visibility and practical support.
+
+Card 2
+
+🎓
+
+For Students
+
+Build experience, earn income and work with real businesses.
+
+Card 3
+
+🛍️
+
+For Customers
+
+Discover trusted local businesses and support your community.
+
+Cards should have rounded corners, soft shadows and smooth hover lift.
+
+---------------------------------------------------
+
+Mission Section
+
+Center aligned.
+
+Heading:
+
+One Platform.
+Three Communities.
+
+Paragraph:
+
+Every business deserves a chance to grow.
+Every student deserves a chance to build.
+Together, we create stronger local communities.
+
+---------------------------------------------------
+
+CTA Section
+
+Large lavender gradient background.
+
+Heading:
+
+Ready to Grow Together?
+
+Button:
+
+Join AIforzy
+
+---------------------------------------------------
+
+Footer
+
+AIforzy
+
+Helping Small Businesses Grow.
+Powered by Young Talent.
+
+Quick Links
+
+Discover
+
+Businesses
+
+Students
+
+About
+
+Contact
+
+Small copyright.
+
+---------------------------------------------------
+
+Animations
+
+Smooth fade-in when scrolling.
+
+Floating blobs.
+
+Button hover glow.
+
+Cards lift slightly.
+
+Navbar blur.
+
+Soft page transitions.
+
+---------------------------------------------------
+
+Extra Details
+
+Rounded corners everywhere.
+
+Lots of whitespace.
+
+Glassmorphism effects.
+
+Professional gradients.
+
+Modern shadows.
+
+Looks similar in quality to Notion, Linear, Stripe or Framer.
+
+No clutter.
+
+Keep everything elegant and premium.
+
+Use Font Awesome icons where suitable.
+
+Make the page fully responsive for mobile, tablet and desktop.
+
+Do not use placeholders like "Lorem Ipsum."
+
+Every piece of text should match AIforzy's mission exactly.
+
+The final output should be a complete single HTML file with embedded CSS and JavaScript.
