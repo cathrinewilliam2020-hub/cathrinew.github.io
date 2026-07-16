@@ -16,11 +16,22 @@ overflow-x:hidden;
 nav{
 
 display:flex;
-gap:18px;
-background:white;
-padding:10px 18px;
-border-radius:30px;
-box-shadow:0 8px 20px rgba(0,0,0,0.05);
+justify-content:space-between;
+align-items:center;
+
+padding:25px 8%;
+
+position:fixed;
+
+width:100%;
+
+top:0;
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(15px);
+
+z-index:999;
 
 }
 
@@ -47,10 +58,12 @@ gap:35px;
 nav a{
 
 text-decoration:none;
-color:#444;
-font-size:13px;
-font-weight:400;
-padding:5px 8px;
+
+color:#333;
+
+font-weight:500;
+
+transition:.3s;
 
 }
 
@@ -208,183 +221,25 @@ color:#666;
 
 .hero-image{
 
-display:flex;
-justify-content:center;
-align-items:center;
+width:420px;
 
-}
-
-
-.zumi{
-
-width:430px;
-height:430px;
-
-border-radius:50%;
-
-background:
-radial-gradient(circle,#d8c7ff,#efe8ff);
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-position:relative;
-
-}
-
-
-/* ZUMI */
-
-.zumi-body{
-
-width:180px;
-height:200px;
-
-background:#7c3aed;
-
-border-radius:90px 90px 70px 70px;
-
-position:relative;
-
-}
-
-
-/* ears */
-
-.ear{
-
-width:55px;
-height:65px;
-
-background:#7c3aed;
-
-position:absolute;
-
-top:-25px;
-
-}
-
-.ear.left{
-
-left:20px;
-
-transform:rotate(-30deg);
-
-border-radius:20px;
-
-}
-
-
-.ear.right{
-
-right:20px;
-
-transform:rotate(30deg);
-
-border-radius:20px;
-
-}
-
-
-/* eyes */
-
-.eyes{
-
-display:flex;
-
-gap:35px;
-
-justify-content:center;
-
-margin-top:70px;
-
-}
-
-
-.eyes span{
-
-width:18px;
-
-height:25px;
+height:420px;
 
 background:white;
 
-border-radius:50%;
-
-}
-
-
-/* smile */
-
-.smile{
-
-width:35px;
-
-height:15px;
-
-border-bottom:3px solid white;
-
-border-radius:50%;
-
-margin:15px auto;
-
-}
-
-
-/* green scarf */
-
-.scarf{
-
-position:absolute;
-
-bottom:45px;
-
-left:-15px;
-
-width:210px;
-
-height:35px;
-
-background:#22c55e;
-
-border-radius:20px;
-
-}
-
-
-/* ladder */
-
-.ladder{
-
-position:absolute;
-
-right:-80px;
-
-bottom:0;
-
-width:60px;
-
-height:120px;
-
-border-left:8px solid #8b5a2b;
-
-border-right:8px solid #8b5a2b;
+border-radius:40px;
 
 display:flex;
 
 flex-direction:column;
 
-justify-content:space-around;
+justify-content:center;
 
-}
+align-items:center;
 
+position:relative;
 
-.ladder div{
-
-height:8px;
-
-background:#8b5a2b;
+box-shadow:0 25px 50px rgba(0,0,0,.08);
 
 }
 
@@ -404,13 +259,220 @@ opacity:.35;
 
 }
 
-.zumi{
+.hero-image{
 
-font-size:120px;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
+.community-circle{
+
+width:430px;
+height:430px;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+#eee5ff,
+#ffffff
+);
 
 position:relative;
 
-animation:float 3s ease-in-out infinite;
+box-shadow:
+0 20px 50px rgba(0,0,0,0.08);
+
+}
+
+
+/* SHOP */
+
+.shop{
+
+position:absolute;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-45%);
+
+}
+
+
+.shop-body{
+
+width:170px;
+height:130px;
+
+background:white;
+
+border-radius:12px;
+
+border:3px solid #111;
+
+position:relative;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+.shop-roof{
+
+width:190px;
+height:45px;
+
+background:#7c3aed;
+
+border-radius:50px 50px 0 0;
+
+margin-left:-10px;
+
+}
+
+
+.shop-name{
+
+position:absolute;
+
+top:18px;
+
+left:20px;
+
+font-size:11px;
+
+font-weight:500;
+
+}
+
+
+.door{
+
+position:absolute;
+
+bottom:0;
+
+left:65px;
+
+width:40px;
+
+height:70px;
+
+background:#111;
+
+border-radius:8px 8px 0 0;
+
+}
+
+
+.window{
+
+position:absolute;
+
+right:15px;
+
+top:45px;
+
+width:35px;
+
+height:35px;
+
+background:#d8c7ff;
+
+border-radius:5px;
+
+}
+
+
+
+/* STUDENTS */
+
+
+.student{
+
+position:absolute;
+
+font-size:55px;
+
+background:white;
+
+width:85px;
+
+height:85px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+.student-one{
+
+top:55px;
+
+left:55px;
+
+}
+
+
+.student-two{
+
+right:55px;
+
+top:70px;
+
+}
+
+
+.student-three{
+
+bottom:60px;
+
+left:80px;
+
+}
+
+
+/* ICONS */
+
+
+.growth-icon{
+
+position:absolute;
+
+top:40px;
+
+right:150px;
+
+font-size:35px;
+
+}
+
+
+.growth{
+
+position:absolute;
+
+bottom:60px;
+
+right:70px;
+
+font-size:40px;
 
 }
 
