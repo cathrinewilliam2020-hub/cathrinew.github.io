@@ -1,13 +1,22 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
 body{
 
 font-family:'Poppins',sans-serif;
 
-background:#F7F3FF;
+background:#F5F1FF;
 
 color:#111;
 
 }
 
+
+/* NAVBAR */
 
 header{
 
@@ -33,11 +42,26 @@ gap:12px;
 }
 
 
+.icon{
+
+width:18px;
+
+height:18px;
+
+background:#111;
+
+border-radius:50%;
+
+}
+
+
 .logo h2{
 
 font-size:28px;
 
 font-weight:700;
+
+letter-spacing:-0.5px;
 
 }
 
@@ -49,7 +73,7 @@ display:flex;
 
 align-items:center;
 
-gap:28px;
+gap:32px;
 
 }
 
@@ -68,13 +92,21 @@ font-weight:500;
 
 
 
+nav a:hover{
+
+opacity:.6;
+
+}
+
+
+
 .start-btn{
 
 background:#111;
 
 color:white!important;
 
-padding:12px 24px;
+padding:13px 28px;
 
 border-radius:30px;
 
@@ -82,7 +114,7 @@ border-radius:30px;
 
 
 
-
+/* HERO */
 
 .hero{
 
@@ -94,7 +126,7 @@ justify-content:space-between;
 
 padding:40px 80px;
 
-min-height:80vh;
+min-height:75vh;
 
 }
 
@@ -107,28 +139,32 @@ width:50%;
 }
 
 
+
 .hero-left h1{
 
 font-size:78px;
 
-line-height:1;
-
 font-weight:800;
+
+line-height:1;
 
 letter-spacing:-2px;
 
 }
 
 
+
 .hero-left p{
 
 font-size:18px;
 
-margin-top:25px;
-
 color:#555;
 
-max-width:500px;
+margin-top:25px;
+
+max-width:480px;
+
+line-height:1.7;
 
 }
 
@@ -136,11 +172,11 @@ max-width:500px;
 
 .buttons{
 
-margin-top:40px;
-
 display:flex;
 
-gap:20px;
+gap:18px;
+
+margin-top:40px;
 
 }
 
@@ -152,7 +188,7 @@ background:#111;
 
 color:white;
 
-padding:15px 30px;
+padding:15px 32px;
 
 border-radius:40px;
 
@@ -163,18 +199,135 @@ font-weight:600;
 }
 
 
+
 .secondary-btn{
 
 background:white;
 
 color:#111;
 
-padding:15px 30px;
+padding:15px 32px;
 
 border-radius:40px;
 
 text-decoration:none;
 
 font-weight:600;
+
+}
+
+
+
+/* RIGHT COLORFUL BOX */
+
+.illustration{
+
+height:430px;
+
+width:430px;
+
+border-radius:35px;
+
+background:
+
+linear-gradient(
+135deg,
+#B9A7FF,
+#FFD86B,
+#8DE1B2,
+#FF9B71
+);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* Add white floating card */
+
+.illustration::after{
+
+content:"Aiforzy";
+
+position:absolute;
+
+background:white;
+
+width:230px;
+
+height:130px;
+
+border-radius:25px;
+
+top:150px;
+
+left:100px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+font-weight:700;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/* CATEGORIES */
+
+
+.categories{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+padding:20px 80px 70px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+
+
+.card h3{
+
+font-size:25px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+color:#555;
+
+line-height:1.7;
 
 }
